@@ -14,11 +14,9 @@ This project is a full-stack dating recommendation engine designed to help users
 - [Running the Application](#running-the-application)
 - [API Endpoints](#api-endpoints)
 - [Frontend Details](#frontend-details)
-- [Adding Swagger to Backend](#adding-swagger-to-backend)
 - [Project Structure](#project-structure)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -127,7 +125,7 @@ $ npm start
 
 ## Screenshots
 
-![UI Screenshot](screenshots/ui.png)
+![UI Screenshot](UI.png)
 
 ---
 
@@ -136,6 +134,5 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 ---
 
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+
 
