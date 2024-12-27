@@ -34,7 +34,7 @@ This project is a full-stack dating recommendation engine designed to help users
 ## Technologies
 
 **Backend**:
-- Java 17
+- Java 21
 - Spring Boot
 - MongoDB
 - Gradle
@@ -72,7 +72,7 @@ $ cd dating-suggestion-app-backend
 $ ./gradlew bootRun
 ```
 
-- Application will run on `http://localhost:8080`
+- Application will run on `http://localhost:8081`
 
 ### Frontend
 ```bash
@@ -97,47 +97,6 @@ $ npm start
 - Beautiful and professional UI with animated elements.
 - Real-time feedback through toast notifications and loading states.
 - Match cards display results in uppercase with custom fonts.
-
----
-
-## Adding Swagger to Backend
-
-To add Swagger to the Spring Boot backend, follow these steps:
-
-1. **Add Dependency to `build.gradle`:**
-```gradle
-implementation 'org.springdoc:springdoc-openapi-ui:1.6.14'
-```
-
-2. **Configure Swagger in `application.properties`:**
-```properties
-springdoc.api-docs.path=/api-docs
-springdoc.swagger-ui.path=/swagger-ui.html
-```
-
-3. **Add OpenAPI Configuration Class:**
-```java
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import io.swagger.v3.oas.models.OpenAPI;
-import io.swagger.v3.oas.models.info.Info;
-
-@Configuration
-public class OpenApiConfig {
-    @Bean
-    public OpenAPI customOpenAPI() {
-        return new OpenAPI()
-                .info(new Info()
-                        .title("Dating Suggestion API")
-                        .version("1.0")
-                        .description("API for managing users and matchmaking"));
-    }
-}
-```
-
-4. **Access Swagger UI:**
-- After running the backend, Swagger UI will be available at:
-  `http://localhost:8080/swagger-ui.html`
 
 ---
 
